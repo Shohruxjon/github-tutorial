@@ -1,0 +1,292 @@
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+.main-navigation-section{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-navigation__item{
+    display: inline-block;
+    padding: 10px;
+}
+
+.main-navigation__item a{
+    color:black;
+    border-bottom: 3px solid rgb(208,0,0);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    transition:0.5s;
+}
+
+.main-navigation__item a:hover{
+    box-shadow:0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset,
+                0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset;
+    text-shadow:0 0 5px rgb(208,0,0),0 0 5px rgb(208,0,0);
+}
+
+.login-navigation{
+    display: inline-block;
+    vertical-align: middle;
+}
+.checkbox-element{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+}
+.main-section__brand{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-section__brand img{
+    display: inline-block;
+    width: 70px;
+}
+.main-section__name{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-section__name h1{
+    color: rgb(208,0,0);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+   }
+
+.switch:hover{
+    border-radius: 35px;
+    box-shadow:0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset,
+                0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset;
+    text-shadow:0 0 5px rgb(208,0,0),0 0 5px rgb(208,0,0);
+}
+.switch input{
+    display: none;
+}
+   
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3C3C3C;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+   
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 8px;
+    bottom: 8px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+   
+input:checked + .slider {
+    background-color: #3C3C3C;
+}
+   
+input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+}
+   
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(85px);
+}
+   
+   /*------ ADDED CSS ---------*/
+.slider:after {
+    content: 'RU';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+}
+   
+input:checked + .slider:after {
+    font-size: 30px;
+    content: 'UZ';
+}
+
+.login:hover{
+       box-shadow:0px 0px 20px 0 rgb(208,0,0),
+                  0px 0px 20px 0 rgb(208,0,0) inset,
+                  0px 0px 20px 0 rgb(208,0,0),
+                  0px 0px 20px 0 rgb(208,0,0) inset;
+       text-shadow:0 0 5px rgb(208,0,0),0 0 5px rgb(208,0,0);
+}
+/*#7CFC00*/
+.login-navigation .login{
+    width:50px;
+    height:28px;
+    background:none;
+    outline:none;
+    border-bottom:3px solid rgb(208,0,0);
+    border-radius:25px;
+    color:black;
+    font-size:15px;
+    transition:0.5s;
+}
+.login-navigation.text,.pass{
+    color:black;
+    background-color: white;
+    width:150px;
+    height:15px;
+    margin:10px 10px 20px 40px;
+    padding:5px;
+    outline:none;
+    border:1px solid rgb(208,0,0);
+    border-radius:25px;
+    font-size:15px;
+    font-family: 'Rubik', sans-serif;
+    text-align:center;
+    letter-spacing:1px;
+}
+.my-foto-section{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.container .site-address-section{
+    float: right;
+}
+.site-address-section ul{
+    position:relative;
+    display: flex;
+    padding: 10px;
+    margin: 0 0;
+}
+.site-address-section a{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgb(208,0,0);
+    background: linear-gradient(0deg,#ddd,#fff);
+    transition: .5s;
+}
+
+.site-address-section a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.site-address-section li:nth-child(1)a:hover .fab{
+    color: #3b5998;
+}
+.site-address-section a .fab{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+.manu-section{
+    background-image: url("../images-folder/font-foto3.jpg");
+    width: 1140px;
+    height: 500px;
+    float: left;
+}
+.manu-navigation-section{
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-navigation__item{
+    height: 40px;
+    margin: 25px;
+    display:block;
+    padding: 0px;
+}
+.menu-navigation__item a{
+    margin: 10px;
+    text-align: center;
+    vertical-align:bottom;
+    display: block;
+    text-decoration: none;
+    width: 20rem;
+    height: 5rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+   }
+   
+   .menu-navigation__item a:hover {
+    transform: translateY(-1.5rem);
+    border: rgb(208,0,0) 0.2em solid;
+    border-radius: 1.5rem 0 1.5rem 0;
+    box-shadow:0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset,
+                0px 0px 20px 0 rgb(208,0,0),
+                0px 0px 20px 0 rgb(208,0,0) inset;
+    text-shadow:0 0 5px rgb(208,0,0),0 0 5px rgb(208,0,0);
+   }
+/*.menu-navigation__item a{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    color: red;
+    text-decoration: none;
+}
+.menu-navigation__item a:hover{
+    width: 350px;
+}
+
+.mt{
+    background-image: url("../images-folder/maishiy-texnika.jpg");
+    background-size: 1280px 235px;
+}*/
